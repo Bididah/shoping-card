@@ -10,6 +10,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { ProductsModule } from './modules/products/products.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatSelectModule,
     MatIconModule,
     MatBadgeModule,
+    ProductsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
