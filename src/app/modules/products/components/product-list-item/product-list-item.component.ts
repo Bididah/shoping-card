@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../../../models/product';
+import { EventService } from '../../../../services/shared/event.service';
 
 @Component({
   selector: 'app-product-list-item',
@@ -9,4 +10,10 @@ import { Product } from '../../../../models/product';
 export class ProductListItemComponent {
   @Input()
   product?: Product;
+
+  constructor(private eventService: EventService) {}
+
+  addToCart(product: Product) {
+    this.eventService.emitEvent(product);
+  }
 }

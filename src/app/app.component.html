@@ -2,7 +2,9 @@
   <mat-toolbar-row>
     <a href="">KATA PANIER </a>
     <span class="flexExpand"></span>
-    <mat-icon matBadge="1">shopping_basket</mat-icon>
+    <mat-icon id="cart" [matBadge]="itemCount > 0 ? itemCount : ''"
+      >shopping_basket</mat-icon
+    >
   </mat-toolbar-row>
 </mat-toolbar>
 
