@@ -1,7 +1,9 @@
 <mat-card class="product-card">
   <mat-card-header>
     <mat-card-title>{{ product?.productName }}</mat-card-title>
-    <mat-card-subtitle>Prix : {{ product?.price }} $</mat-card-subtitle>
+    <mat-card-subtitle
+      >Prix : {{ product?.price | price : product }} $</mat-card-subtitle
+    >
     <mat-card-subtitle>Category : {{ product?.category }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-actions>
