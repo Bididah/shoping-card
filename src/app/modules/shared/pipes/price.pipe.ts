@@ -5,7 +5,7 @@ import { Product } from '../../../models/product';
   name: 'price',
 })
 export class PricePipe implements PipeTransform {
-  transform(value: number | undefined, product: Product | undefined): number {
+  transform(value: number | undefined, product: Product | undefined): string {
     let taxes: number = 0;
     if (product?.isImported) {
       taxes += value! * 0.05;
@@ -15,6 +15,6 @@ export class PricePipe implements PipeTransform {
       taxes += product?.category === 'Books' ? value! * 0.1 : value! * 0.2;
     }
 
-    return value! + Number(taxes.toFixed(2));
+    return (value! + taxes).toFixed(2);
   }
 }

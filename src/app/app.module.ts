@@ -11,7 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { ProductsModule } from './modules/products/products.module';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -23,6 +23,7 @@ import { ProductsModule } from './modules/products/products.module';
     MatSelectModule,
     MatIconModule,
     MatBadgeModule,
+    MatToolbarModule,
     ProductsModule,
   ],
   providers: [provideAnimationsAsync()],

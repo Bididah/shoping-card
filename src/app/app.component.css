@@ -1,5 +1,6 @@
-.container {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+.flexExpand {
+  flex: 1 1 auto;
+}
+.toolbar {
+  margin-bottom: 1rem;
 }

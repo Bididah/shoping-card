@@ -1,22 +1,22 @@
-<h1>Hello, {{ title }}</h1>
+<mat-toolbar class="toolbar max-w-7xl my-4 mx-auto border-x">
+  <mat-toolbar-row>
+    <a href="">KATA PANIER </a>
+    <span class="flexExpand"></span>
+    <mat-icon matBadge="1">shopping_basket</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-<div class="container">
-  <div class="filter">
-    Filter By Category :
-    <mat-form-field>
-      <mat-label>Select an option</mat-label>
-      <mat-select [(value)]="selected">
-        <mat-option>None</mat-option>
-        <mat-option value="option1">Option 1</mat-option>
-        <mat-option value="option2">Option 2</mat-option>
-        <mat-option value="option3">Option 3</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
-  <div class="panier">
-    Panier :
-    <mat-icon matBadge="1" matBadgeColor="warn">shopping_basket</mat-icon>
-  </div>
+<div class="filter">
+  Filter By Category :
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option>None</mat-option>
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2">Option 2</mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>
 
 <app-products></app-products>
