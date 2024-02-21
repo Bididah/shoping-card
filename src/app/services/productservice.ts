@@ -7,7 +7,7 @@ import { Product } from '../models/product';
   providedIn: 'root',
 })
 export class ProductService {
-  baseUrl: string = 'http://localhost:8080';
+  baseUrl: string = 'http://localhost:3000';
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<Product[]> {

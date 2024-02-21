@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "productName": "",
+      "productName": "Iphone 15",
       "price": 1.76,
       "quantity": 7,
       "isImported": true,

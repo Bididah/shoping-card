@@ -190,7 +190,7 @@ describe('ProductServiceService', () => {
       expect(data).toEqual(testData);
     });
 
-    const req = httpMock.expectOne('http://localhost:8080/products'); // Expect a GET request to this URL
+    const req = httpMock.expectOne('http://localhost:3000/products'); // Expect a GET request to this URL
     expect(req.request.method).toEqual('GET');
 
     req.flush(testData); // Provide mock response
@@ -203,7 +203,7 @@ describe('ProductServiceService', () => {
         expect(error).toBeTruthy();
       }
     );
-    const req = httpMock.expectOne('http://localhost:8080/products');
+    const req = httpMock.expectOne('http://localhost:3000/products');
     req.error(new ErrorEvent('Network error'), {
       status: 404,
       statusText: 'Not Found',

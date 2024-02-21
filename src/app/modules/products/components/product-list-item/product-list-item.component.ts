@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from '../../../../models/product';
 
 @Component({
@@ -7,12 +7,6 @@ import { Product } from '../../../../models/product';
   styleUrl: './product-list-item.component.css',
 })
 export class ProductListItemComponent {
-  productTest: Product = {
-    id: 1,
-    productName: 'Iphone 15',
-    price: 1.76,
-    quantity: 7,
-    isImported: true,
-    category: 'Food',
-  };
+  @Input()
+  product?: Product;
 }

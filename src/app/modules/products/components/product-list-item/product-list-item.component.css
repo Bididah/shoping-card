@@ -1,3 +1,7 @@
 .product-card {
-  max-width: 400px;
+  border: 1px solid gray;
+}
+
+.panier {
+  border: 1px solid gray;
 }
