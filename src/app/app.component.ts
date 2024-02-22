@@ -19,7 +19,6 @@ export class AppComponent {
       .pipe(skip(1))
       .subscribe((data) => {
         this.itemCount++;
-        console.log(document.getElementById('cart'));
       });
   }
 }

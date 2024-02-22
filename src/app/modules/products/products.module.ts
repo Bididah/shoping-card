@@ -6,6 +6,7 @@ import { ProductListItemComponent } from './components/product-list-item/product
 import { ProductsComponent } from './products.component';
 import { MatButtonModule } from '@angular/material/button';
 import { SharedModule } from '../shared/shared.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,13 @@ import { SharedModule } from '../shared/shared.module';
     ProductListComponent,
     ProductListItemComponent,
   ],
-  imports: [CommonModule, MatCardModule, MatButtonModule , SharedModule],
+  imports: [
+    CommonModule,
+    MatCardModule,
+    MatButtonModule,
+    SharedModule,
+    MatIconModule,
+  ],
   exports: [ProductsComponent],
 })
 export class ProductsModule {}

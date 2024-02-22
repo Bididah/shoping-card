@@ -11,7 +11,21 @@ export class ProductListItemComponent {
   @Input()
   product?: Product;
 
+  quantity: number = 0;
+
   constructor(private eventService: EventService) {}
+
+  increment() {
+    if (this.quantity < this.product?.quantity!) {
+      this.quantity++;
+    }
+  }
+
+  decrement() {
+    if (this.quantity > 0) {
+      this.quantity--;
+    }
+  }
 
   addToCart(product: Product) {
     this.eventService.emitEvent(product);
